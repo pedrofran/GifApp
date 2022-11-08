@@ -12,7 +12,7 @@ export const useFetchGifs = ( category ) => {
         setIsLoading(false);
     }
     
-    
+     //esto se usa para no recargar la pagina mientras hago un cambio hacer un efecto secundario que se puede ejecutar solo cuando queramos pero que no se tiene que hacer cada vez
     useEffect( () => {
         getImages(category);
     }, [category]);

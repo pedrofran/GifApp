@@ -7,13 +7,7 @@ export const getGifs = async (category)=>{
 
     //fetch
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${key}&q=${search}&limit=${limit}&offset=0&rating=r&lang=en`
-    const resp = await fetch(url,
-        {
-            headers: {
-                'Content-Type': 'application/json',
-                'Set-Cookie': 'cross-site-cookie=whatever; SameSite=None; Secure'
-              },
-        })
+    const resp = await fetch(url)
     const {data} = await resp.json();
     
     //get images

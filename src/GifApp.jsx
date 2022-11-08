@@ -11,11 +11,10 @@ export const GifApp = () => {
     <>
         <h1>GifApp</h1>
 
-        <AddCategory setCategories={setCategories} 
+        <AddCategory
             onChangeCategory={onChangeCategory}
         />
-
-        
+ 
         <GifGrid category={categories}/>
     </>
 
